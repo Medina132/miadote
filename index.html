@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adoção de Cães</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <!-- Logo no canto superior esquerdo -->
+      <img src="download-removebg-preview.png" alt="Logo da Marca de Adoção" class="logo">
+  
+      <!-- Título centralizado -->
+      <div class="title">
+        <h1>Adote um Amigo</h1>
+        <p>Dê um lar cheio de amor para um cãozinho!</p>
+      </div>
+    </div>
+  </header>  
+   
+  <nav class="navbar">
+    <ul>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <div class="flags">
+      <!-- Botão da bandeira do Brasil -->
+      <button onclick="translateToPortuguese()" style="border: none; background: none; cursor: pointer;">
+        <img src="https://flagcdn.com/w40/br.png" alt="Português - Brasil" title="Português" />
+      </button>
+  
+      <!-- Botão da bandeira dos EUA -->
+      <button onclick="translateToEnglish()" style="border: none; background: none; cursor: pointer;">
+        <img src="https://flagcdn.com/w40/us.png" alt="English - USA" title="English" />
+      </button>
+    </div>
+  </nav>
+  
+
+  <main>
+    <section class="dog-list">
+      <!-- 🐶 Cão 1 -->
+      <div class="dog-card">
+        <figure>
+          <!-- ⬇️ Substitua o link abaixo pela URL da imagem do cão -->
+          <img src="https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/domestic-dog.webp?h=900&w=1600" alt="Cachorro 1">
+          <figcaption>Thor</figcaption>
+        </figure>
+        <p>Macho, 2 anos. Muito brincalhão e dócil.</p>
+        <button>Adotar</button>
+      </div>
+
+      <!-- 🐶 Cão 2 -->
+      <div class="dog-card">
+        <figure>
+          <!-- ⬇️ Substitua o link abaixo pela URL da imagem do cão -->
+          <img src="https://adimax.com.br/wp-content/uploads/2022/05/cuidados-filhote-de-cachorro.jpg" alt="Cachorro 2">
+          <figcaption>Luna</figcaption>
+        </figure>
+        <p>Fêmea, 1 ano. Carinhosa e obediente.</p>
+        <button>Adotar</button>
+      </div>
+
+      <!-- 🐶 Cão 3 -->
+      <div class="dog-card">
+        <figure>
+          <!-- ⬇️ Substitua o link abaixo pela URL da imagem do cão -->
+          <img src="https://ufape.com.br/wp-content/uploads/2024/06/Ufape-Hospital-Veterinario-filhote-de-cachorro-brincando-na-grama-GS2-MKT-Freepik.jpg" alt="Cachorro 3">
+          <figcaption>Rex</figcaption>
+        </figure>
+        <p>Macho, 3 anos. Protetor e companheiro.</p>
+        <button>Adotar</button>
+      </div>
+
+      <!-- 🐶 Cão 4 -->
+<div class="dog-card">
+  <figure>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS95-VqMS3iCPmnPLT1dSB9vhTaG9LzlM25-Q&s" alt="Cachorro 4">
+    <figcaption>Mario</figcaption>
+  </figure>
+  <p>Macho, 4 meses. Brincalhona e cheia de energia.</p>
+  <button>Adotar</button>
+</div>
+
+<!-- 🐶 Cão 5 -->
+<div class="dog-card">
+  <figure>
+    <img src="https://cdn.pixabay.com/photo/2017/09/25/13/12/dog-2785074_960_720.jpg" alt="Cachorro 5">
+    <figcaption>Bob</figcaption>
+  </figure>
+  <p>Macho, 5 anos. Calmo e ideal para companhia tranquila.</p>
+  <button>Adotar</button>
+</div>
+
+<!-- 🐶 Cão 6 -->
+<div class="dog-card">
+  <figure>
+    <img src="data:image/jpeg;base64,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" alt="Cachorro 6">
+    <figcaption>Tomas Shelby</figcaption>
+  </figure>
+  <p>Macho, 2 anos. Muito sociável com crianças e outros animais.</p>
+  <button>Adotar</button>
+</div>
+<section id="contato" class="fale-conosco">
+  <h2>Fale Conosco</h2>
+  <p></p>
+  <form action="#" method="post">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="mensagem">Mensagem:</label>
+    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Adote um Amigo. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    function translateToEnglish() {
+      document.querySelector('.title h1').textContent = 'Adopt a Friend';
+      document.querySelector('.title p').textContent = 'Give a dog a loving home!';
+      
+      const dogCards = document.querySelectorAll('.dog-card');
+  
+      const translations = [
+        { name: 'Thor', desc: 'Male, 2 years old. Very playful and docile.' },
+        { name: 'Luna', desc: 'Female, 1 year old. Affectionate and obedient.' },
+        { name: 'Rex', desc: 'Male, 3 years old. Protective and loyal.' },
+        { name: 'Mario', desc: 'Male, 4 months. Playful and full of energy.' },
+        { name: 'Bob', desc: 'Male, 5 years old. Calm and ideal for quiet company.' },
+        { name: 'Dog', desc: 'Description not available.' }
+      ];
+  
+      dogCards.forEach((card, index) => {
+        const figcaption = card.querySelector('figcaption');
+        const p = card.querySelector('p');
+        const button = card.querySelector('button');
+  
+        if (translations[index]) {
+          figcaption.textContent = translations[index].name;
+          p.textContent = translations[index].desc;
+        }
+        
+        button.textContent = 'Adopt';
+      });
+  
+      // Links do menu
+      document.querySelector('a[href="#sobre"]').textContent = 'About';
+      document.querySelector('a[href="#contato"]').textContent = 'Contact';
+    }
+  
+    function translateToPortuguese() {
+      document.querySelector('.title h1').textContent = 'Adote um Amigo';
+      document.querySelector('.title p').textContent = 'Dê um lar cheio de amor para um cachorro!';
+      
+      const dogCards = document.querySelectorAll('.dog-card');
+  
+      const translations = [
+        { name: 'Thor', desc: 'Macho, 2 anos. Muito brincalhão e dócil.' },
+        { name: 'Luna', desc: 'Fêmea, 1 ano. Carinhosa e obediente.' },
+        { name: 'Rex', desc: 'Macho, 3 anos. Protetor e leal.' },
+        { name: 'Mario', desc: 'Macho, 4 meses. Brincalhão e cheio de energia.' },
+        { name: 'Bob', desc: 'Macho, 5 anos. Calmo e ideal para companhia tranquila.' },
+        { name: 'Cachorro', desc: 'Descrição não disponível.' }
+      ];
+  
+      dogCards.forEach((card, index) => {
+        const figcaption = card.querySelector('figcaption');
+        const p = card.querySelector('p');
+        const button = card.querySelector('button');
+  
+        if (translations[index]) {
+          figcaption.textContent = translations[index].name;
+          p.textContent = translations[index].desc;
+        }
+        
+        button.textContent = 'Adotar';
+      });
+  
+      // Links do menu
+      document.querySelector('a[href="#sobre"]').textContent = 'Sobre';
+      document.querySelector('a[href="#contato"]').textContent = 'Contato';
+    }
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff; /* azul claro */
+  color: #333;
+}
+
+header {
+  background-color: #0077cc; /* azul */
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+main {
+  padding: 2rem;
+}
+
+.dog-list {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dog-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 260px;
+  padding: 1.2rem;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.dog-card:hover {
+  transform: translateY(-5px);
+}
+
+.dog-card figure {
+  margin: 0;
+}
+
+.dog-card img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+.dog-card figcaption {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0077cc; /* azul */
+  margin-top: 0.6rem;
+}
+
+.dog-card p {
+  margin: 0.8rem 0;
+}
+
+button {
+  background-color: #ff8000; /* laranja */
+  color: white;
+  border: none;
+  padding: 0.9rem 1.4rem; /* botão maior */
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e07000; /* laranja escuro */
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #0077cc;
+  color: white;
+  margin-top: 2rem;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.logo {
+  height: 60px;
+}
+
+.title {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #eee;
+  padding: 10px 20px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+}
+
+.flags img {
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 3px;
+  transition: transform 0.3s ease;
+}
+
+.flags img:hover {
+  transform: scale(1.1);
+}
+
+.dog-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.dog-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 280px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+.dog-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.dog-card button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #2e8b57;
+  border: #524f4f;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dog-card button:hover {
+  background-color: hsl(114, 19%, 80%);
+  border-color: red;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #222;
+    color: #fff;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  .fale-conosco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  .fale-conosco span {
+    font-weight: bold;
+  }
+  nav {
+    display: flex;
+    gap: 10px;
+  }
+  .btn-contato {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .btn-contato:hover,
+  .btn-contato:focus {
+    background-color: #004999;
+    outline: 3px solid #fff;
+    outline-offset: 2px;
+  }
+
+  .fale-conosco {
+    padding: 40px 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+  }
+  
+  .fale-conosco h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .fale-conosco form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .fale-conosco label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  
+  .fale-conosco input,
+  .fale-conosco textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .fale-conosco button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: #2a9d8f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .fale-conosco button:hover {
+    background-color: #21867a;
+  }
+  
